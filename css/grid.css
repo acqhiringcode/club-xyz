@@ -1,0 +1,31 @@
+.container {
+    width: 100%;
+}
+.container .row {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+@media only screen
+and (min-width: 1024px)
+and (max-width: 1200px) {
+    .container .row {
+        max-width: 1000px;
+    }
+}
+@media only screen
+and (min-width: 768px)
+and (max-width: 1023px) {
+    .container .row {
+        max-width: 100%;
+    }
+}
+@media only screen
+and (max-width: 767px) {
+    .container .row {
+        padding: 0 15px;
+    }
+}
+

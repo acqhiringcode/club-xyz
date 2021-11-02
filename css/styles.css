@@ -1,0 +1,15 @@
+
+
+.main-nav {
+    background-color: #000000;
+}
+.main-nav a {
+    color: #fff;
+    font-size: 14px;
+}
+.main-nav .content {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
