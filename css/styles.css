@@ -1,15 +1,131 @@
-
-
-.main-nav {
-    background-color: #000000;
+/* font-family: 'Montserrat', sans-serif; */
+body {
+    height: 3000px;
 }
-.main-nav a {
-    color: #fff;
-    font-size: 14px;
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    z-index: 99999999999;
 }
 .main-nav .content {
     width: 100%;
+    height: 96px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
+.logo-container span {
+    display: inline-block;
+    color: #fff;
+    font-weight: 900;
+    font-style: normal;
+}
+.menu-list {
+    position: relative;
+}
+.menu-list::after {
+    content: '';
+    width: 2px;
+    height: 15px;
+    background-color: #fff;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+.menu-list li a {
+    color: #fff;
+    font-weight: 600;
+}
+.login-container a {
+    display: inline-block;
+    color: #FFD11C;
+    font-weight: 600;
+}
+@media only screen
+and (min-width: 768px) {
+
+    .logo-imagen {
+        margin-right: 20px;
+    }
+    .logo-imagen img {
+        width: 69px;
+        height: auto;
+    }
+    .logo-container {
+        flex-basis: 353px;
+        display: flex;
+        align-items: center;
+    }
+    .logo-container span {
+        max-width: 180px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .menu-list {
+        flex-grow: 1;
+        display: flex;
+        padding-left: 38px;
+    }
+    .menu-list li:not(:last-child) {
+        margin-right: 29px;
+    }
+    .menu-list li a {
+        font-size: 15px;
+        line-height: 17px;
+    }
+    .login-container {
+        flex-basis: 220px;
+        text-align: right;
+    }
+    .login-container a {
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
+
+@media only screen
+and (max-width: 1200px) {
+    .main-nav .content {
+        padding: 0 15px;
+    }
+    .logo-imagen {
+        margin-right: 10px;
+    }
+    .logo-imagen img {
+        width: 49px;
+        height: auto;
+    }
+    .logo-container {
+        display: flex;
+        align-items: center;
+    }
+    .logo-container span {
+        max-width: 140px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+
+    
+     .main-nav .content {
+        justify-content: space-between;
+    }
+    .menu-list {
+        display: none;
+    }
+    .logo-container span {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .login-container a {
+        max-width: 90px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
