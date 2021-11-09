@@ -8,9 +8,9 @@
     <title>Cluv XYZ</title>
 
     <!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,700&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     <link rel="stylesheet" href="./css/reset.css">
@@ -20,44 +20,85 @@
 </head>
 <body>
 
-    <nav class="container main-nav">
+    <!-- Main nav -->
+    <div class="main-nav__sticky"> 
+        <nav class="container main-nav">
+            <div class="row">
+                <div class="content">
+                    <a href="#" class="logo-container">
+                        <figure class="logo-imagen">
+                            <img src="./imgs/main-logo.png" alt="logo">
+                        </figure>
+                        <span>Informandote desde todos los puntos</span>
+                    </a>
+                    <ul class="menu-list">
+                        <li>
+                            <a href="">Item 1</a>
+                        </li>
+                        <li>
+                            <a href="">Item 2</a>
+                        </li>
+                        <li>
+                            <a href="">Item 3</a>
+                        </li>
+                        <li>
+                            <a href="">Item 4</a>
+                        </li>
+                        <li>
+                            <a href="">Item 5</a>
+                        </li>
+                        <li>
+                            <a href="">Item 6</a>
+                        </li>
+                    </ul>
+                    <div class="login-container">
+                        <a href="#">Inicar Sesion</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- /Main nav -->
+    
+    <!-- Header -->
+    <header class="container main-header">
         <div class="row">
             <div class="content">
-                <a href="#" class="logo-container">
-                    <figure class="logo-imagen">
-                        <img src="./imgs/main-logo.png" alt="logo">
-                    </figure>
-                    <span>Informandote desde todos los puntos</span>
-                </a>
-                <ul class="menu-list">
+                <h1>Que vas a aprender hoy XYZ!</h1>
+                <input type="text" placeholder="Ingresa tu texto aqui">
+            </div>
+        </div>
+    </header>
+    <!-- /Header -->
+
+    <!-- Nav celeste -->
+    <nav class="container nav-celeste">
+        <div class="row">
+            <div class="content">
+                <ul>
                     <li>
-                        <a href="">Item 1</a>
+                        <a href="#">Item 1</a>
                     </li>
                     <li>
-                        <a href="">Item 2</a>
+                        <a href="#">Item 2</a>
                     </li>
                     <li>
-                        <a href="">Item 3</a>
+                        <a href="#">Item 3</a>
                     </li>
                     <li>
-                        <a href="">Item 4</a>
+                        <a href="#">Item 4</a>
                     </li>
                     <li>
-                        <a href="">Item 5</a>
+                        <a href="#">Item 5</a>
                     </li>
                     <li>
-                        <a href="">Item 6</a>
+                        <a href="#">Item 6</a>
                     </li>
                 </ul>
-                <div class="login-container">
-                    <a href="#">Inicar Sesion</a>
-                </div>
             </div>
         </div>
     </nav>
-
-
-
+    <!-- /Nav celeste -->
 
     <script src="./scripts/main.js"></script>
 </body>

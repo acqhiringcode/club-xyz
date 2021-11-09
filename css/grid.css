@@ -6,7 +6,9 @@
     max-width: 1150px;
     margin: 0 auto;
 }
-
+.container .content {
+    padding: 0 15px;
+}
 @media only screen
 and (min-width: 1024px)
 and (max-width: 1200px) {
@@ -19,12 +21,6 @@ and (min-width: 768px)
 and (max-width: 1023px) {
     .container .row {
         max-width: 100%;
-    }
-}
-@media only screen
-and (max-width: 767px) {
-    .container .row {
-        padding: 0 15px;
     }
 }
 
