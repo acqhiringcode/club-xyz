@@ -3,6 +3,46 @@ body {
     height: 3000px;
 }
 
+/* #region Componentes Generales */
+
+.button {
+    display: inline-block;
+    text-align: center;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.button.white {
+    background-color: #fff;
+    color: #000;
+    border-color: #fff;
+}
+.button.black {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}
+@media only screen
+and (min-width: 768px) {
+    .button {
+        font-size: 20px;
+        line-height: normal;
+        padding: 15px 55px 15px 55px;
+    }
+}
+@media only screen
+and (max-width: 767px) {
+    .button {
+        font-size: 14px;
+        line-height: normal;
+        padding: 10px 30px 10px 30px;
+    }
+}
+/* #endregion */
+
+
 /* #region Main Nav */
 .main-nav {
     position: fixed;
@@ -207,7 +247,6 @@ and (max-width: 767px) {
 
 /* #endregion */
 
-
 /* #region Nav celeste */
 .nav-celeste {
     position: relative;
@@ -240,8 +279,8 @@ and (min-width: 768px) {
 @media only screen
 and (max-width: 767px) {
     .nav-celeste a {
-        font-size: 18px;
-        line-height: 22px;
+        font-size: 14px;
+        line-height: 16px;
     }
     .nav-celeste ul {
         display: flex;
@@ -257,3 +296,169 @@ and (max-width: 767px) {
 
 }
 /* #endregion */
+
+/* #region Banner */
+.banner {
+    position: relative;
+    width: 100%;
+}
+.banner.banner-yellow {
+    background-color: #ffd200;
+}
+.banner.banner-orange {
+    background-color: #f93036;
+}
+.banner h2 {
+    color: #000;
+    font-weight: 700;
+}
+@media only screen
+and (min-width: 768px) {
+    .banner {
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .banner.banner-yellow {
+        background-image: url('../imgs/banner-yellow.jpg');
+    }
+    .banner.banner-orange {
+        background-image: url('../imgs/banner-orange.jpg');
+    }
+    .banner-taza .row {
+        position: relative;
+        top: 97px;
+        z-index: 2;
+        align-items: center;
+    }
+    .banner-taza .content {
+        height: 177px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .banner-taza h2::before {
+        content: '';
+        position: absolute;
+        left: -290px;
+        top: 35%;
+        transform: translateY(-50%);
+        display: inline-block;
+        background-image: url('../imgs/taza.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 295px;
+        height: 291px;
+        z-index: 3;
+    }
+    .banner-taza::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 30px;
+        background-color: #F93036;
+        width: 1920px;
+        height: 177px;
+        display: inline-block;
+        z-index: 1;
+    }
+    .banner-taza {
+        height: 291px;
+    }
+    .banner-taza h2 {
+        color: #fff;
+    }
+    .banner .content {
+        height: 156px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .banner h2 {
+        font-size: 38px;
+        line-height: 40px;
+    }
+}
+@media only screen
+and (min-width: 768px)
+and (max-width: 1024px) {
+    .banner {
+        background-image: none;
+    }
+    .banner h2 {
+         font-size: 30px;
+    }
+}
+@media only screen
+and (max-width: 767px) {
+    
+    .banner .content {
+        padding: 35px 15px;
+    }
+    .banner h2 {
+        font-size: 22px;
+        line-height: 30px;
+        margin-bottom: 15px;
+        max-width: 180px;
+    }
+}
+/* #endregion */
+
+/* #region Banner */
+.banner {
+
+}
+@media only screen
+and (min-width: 768px) {
+
+}
+@media only screen
+and (max-width: 767px) {
+
+
+}
+/* #endregion */
+
+/* #region Banner */
+.banner {
+    
+}
+@media only screen
+and (min-width: 768px) {
+
+}
+@media only screen
+and (max-width: 767px) {
+
+
+}
+/* #endregion */
+
+/* #region Banner */
+
+@media only screen
+and (min-width: 768px) {
+
+}
+@media only screen
+and (max-width: 767px) {
+
+
+}
+/* #endregion */
+
+/* #region Banner */
+
+@media only screen
+and (min-width: 768px) {
+
+}
+@media only screen
+and (max-width: 767px) {
+
+
+}
+/* #endregion */
+
+
+
